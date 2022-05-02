@@ -60,7 +60,8 @@ namespace Entidades
                 switch (tipo)
                 {
                     case ETipo.Ciclomotor:
-                        if(v is Ciclomotor)
+                        if(v is Ciclomotor) //Tuve que agregar estos IFs, para que lo muestre por tipo, de lo contrario mostraba todo nuevamente aunque no estoy seguro
+                                            // si cuenta como cambiarle la lógica al programa
                         sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Sedan:
